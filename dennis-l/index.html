@@ -1,0 +1,30 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+<script src="https://npmcdn.com/vue-router/dist/vue-router.js"></script>
+
+<div id="app">
+  <router-link to="/">/home</router-link>
+  <router-link to="/foo">/foo</router-link>
+  <router-view></router-view>
+</div>
+
+
+<script>
+const Home = { template: '<div>Home</div>' }
+const Foo = { template: '<div>Foo</div>' }
+
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
+    { path: '/', component: Home },
+    { path: '/foo', component: Foo }
+  ]
+})
+
+new Vue({
+	router,
+  el: '#app',
+  data: {
+    msg: 'Hello World'
+  }
+})
+</script>

@@ -1,0 +1,13 @@
+{
+  "name": "testing",
+  "version": "0.0.1",
+  "description": "description",
+  "homepage": "https://surge.sh",
+  "repository": "https://github.com/",
+  "license": "MIT",
+  "private": true,
+  "author": "none",
+  "dependencies": {
+    "surge": "latest"
+  }
+}
